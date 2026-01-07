@@ -31,5 +31,6 @@ for i in range(1 ,int(sqrt)+1):
             factors3.append(num//i)
         else:
             continue
+#here the order of factors might be jumbled but who cares about order .
 
 print(factors3)
