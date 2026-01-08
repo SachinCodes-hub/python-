@@ -10,4 +10,15 @@ for ch in str1:
     index = ascii - 97
     
     print(hashmap[index])
-    
+
+
+string3 = "ttththrj"
+hashmap = [0] *26
+for ch in string3:
+    print(ord(ch))
+    index = ord(ch) - 97 # ascii values are from 97 - 123 - so to make them start from 0 index . 
+    hashmap[index] = hashmap[index] + 1
+
+
+    print(hashmap[3])
+
