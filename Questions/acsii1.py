@@ -1,6 +1,6 @@
 str = "abccdgfr" # string are iterable in python and in general language
 str1 = "abcd"# now here we have characters 
-hashmap = [0] * 26
+hashmap = [0] * 26  #list for storing the values //hashing
 for ch in str:
     ascii = ord(ch)
     index = ascii - 97
@@ -16,7 +16,7 @@ string3 = "ttththrj"
 hashmap = [0] *26
 for ch in string3:
     print(ord(ch))
-    index = ord(ch) - 97 # ascii values are from 97 - 123 - so to make them start from 0 index . 
+    index = ord(ch) - 97 # ascii values are from 97 - 122 - so to make them start from 0 index . 
     hashmap[index] = hashmap[index] + 1
 
 

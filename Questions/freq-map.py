@@ -1,4 +1,4 @@
-freqmap = {}
+''' freqmap = {}
 nums = [1,2,3,3,4,5,4]
 n = len(nums)
 
@@ -51,3 +51,30 @@ for tango in num2:
         print("-1")
     else:
         print(hashlist[tango])
+        
+        
+        
+        
+        
+'''
+quote = [1,2,2,3,1,23,3]
+
+freqmap2 = dict()
+
+for _ in quote:
+    if _ in freqmap2:
+        freqmap2[_] += 1 
+    
+    else:
+        freqmap2[_] =1
+
+print(freqmap2) #prints the dictorniary . 
+
+hashmap = {}
+
+for tang in quote:
+    hashmap[tang] = hashmap.get(tang , 0) +1
+
+print(hashmap[1])
+
+
