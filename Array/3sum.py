@@ -36,5 +36,8 @@ for i in range(0 ,n):
         
     
 print(result)
+
+#optimum solution - 
+
         
         
