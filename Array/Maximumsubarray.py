@@ -1,3 +1,5 @@
+#Maximum sum of subarray - Continuous
+
 arr = [-1,2,3,-4,-2,1,1]
 maxsum = float("-inf")
 
@@ -22,7 +24,8 @@ for i in range(0 , len(arr)):
     maxtotal = max (total,maxtotal)
     
     if total < 0 :
-        total = 0 
+        total = 0    #Here whenever total is negative . there is no point in continuing with the negative .instead reset it to 0 then agin continue
+        #Negative total will not get us to the maximum total 
     
 print(maxtotal)
     
