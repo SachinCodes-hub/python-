@@ -50,7 +50,31 @@ class Singlylinkedlist:
             prevnode.next = newnode
             newnode.next = curr
             
-            
+    def delete(self, val):
+        temp = self.head
+
+    # Case 1: Empty list
+        if temp is None:
+            print("List is empty")
+            return
+
+    # Case 2: Head needs to be deleted
+        if temp.val == val:
+            self.head = temp.next
+            return
+
+    # Case 3: Delete non-head node
+        prev = None
+        while temp is not None:
+            if temp.val == val:
+                prev.next = temp.next
+                return
+            prev = temp
+            temp = temp.next
+
+    # Case 4: Value not found
+        print("Node not found")
+                    
             
             
                 
@@ -62,8 +86,9 @@ sll = Singlylinkedlist()
 sll.append(20)
 sll.append(12)
 sll.append(16)
-
 sll.insertat(5,0)
+sll.traverse()
+sll.delete(16)
 sll.traverse()
 print(sll)
             
