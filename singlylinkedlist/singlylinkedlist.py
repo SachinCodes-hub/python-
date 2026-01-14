@@ -16,7 +16,7 @@ class Singlylinkedlist:
         
         else:
             curr = self.head
-            while curr.next != None:
+            while curr.next != None:  # append . you have to be on last element so hence . when im on last curr = last ,  stop there . so for stopping there curr.next is None
                 curr = curr.next
             curr.next = newnode
         
@@ -26,10 +26,34 @@ class Singlylinkedlist:
         
         else:
             curr = self.head
-            while curr != None:
+            while curr != None:  #here we dont have to stop . we dont want our curr to be on last element so their is no need. 
+                
                 print(curr.val, end = " ")
                 curr = curr.next
             
+    def insertat(self,val , postion):
+        newnode = Node(val)
+        prevnode = None
+        
+        if postion ==0:
+            newnode.next = self.head
+            self.head = newnode
+        
+        else:
+            count =0 
+            curr = self.head
+            while curr.next !=0 and count <postion:
+                prevnode = curr
+                curr = curr.next
+                count +=1 
+            
+            prevnode.next = newnode
+            newnode.next = curr
+            
+            
+            
+            
+                
             
         
 
@@ -38,8 +62,9 @@ sll = Singlylinkedlist()
 sll.append(20)
 sll.append(12)
 sll.append(16)
-sll.traverse()
 
+sll.insertat(5,0)
+sll.traverse()
 print(sll)
             
         
