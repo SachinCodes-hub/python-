@@ -18,15 +18,27 @@ class Singlylinkedlist:
             curr = self.head
             while curr.next != None:
                 curr = curr.next
-            
             curr.next = newnode
+        
+    def traverse(self):
+        if not self.head:
+            print("SLL is empty")
+        
+        else:
+            curr = self.head
+            while curr != None:
+                print(curr.val, end = " ")
+                curr = curr.next
+            
+            
         
 
 sll = Singlylinkedlist()
 
 sll.append(20)
 sll.append(12)
-
+sll.append(16)
+sll.traverse()
 
 print(sll)
             
