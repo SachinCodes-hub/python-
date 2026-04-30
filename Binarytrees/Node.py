@@ -39,3 +39,5 @@ drinks.right = cold
 # now our binary tree is created . 
 
 print(drinks.right.right.val) # fanta
+
+print(hot.left.val) # coffee
