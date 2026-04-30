@@ -81,9 +81,10 @@ inorder(five)
 def postorder(node):
     if node == None: # node should ot be any left dosent matter the value
         return
-    print(node.val)
+    
     
     postorder(node.left)
+    print(node.val)
     postorder(node.right)
     
 
