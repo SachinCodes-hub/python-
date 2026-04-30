@@ -7,12 +7,7 @@ class Node:
         self.right = None 
         self.left = None
     
-    
-    
-    
-    
-    
-    
+
 five = Node("5")
 three = Node("3")
 two  = Node("2")
@@ -46,10 +41,13 @@ print(five.right.left.val)
 
 
 
-# traversal
+# traversal methods
+
+
+# 1. preorder - root left right
 
 def preorder(node):
-    if node ==None: # when no node left to traverse return(stop)
+    if node ==None: # when no node left to traverse return(stop) not value . 
         return 
     print(node.val)
     
@@ -67,14 +65,28 @@ preorder(five)
 
 
 def inorder(node):
-    if node.val == None:
+    if node == None:
         return 
     
-    print(node.val)
     inorder(node.left)
+    print(node.val)
     inorder(node.right)
     
 
 
-inorder(three)
+inorder(five)
+
+# post order traversal  - [left right root]
+
+def postorder(node):
+    if node == None: # node should ot be any left dosent matter the value
+        return
+    print(node.val)
     
+    postorder(node.left)
+    postorder(node.right)
+    
+
+postorder(five)
+    
+
