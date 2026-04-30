@@ -12,3 +12,30 @@ print(matrix)
 for u , v in edges:
     matrix[u][v] = 1
     matrix[v][u] = 1
+    
+    
+# List
+
+lst = [[] for _ in range(n+1)]
+
+# print(lst) - # list approach is better . 
+
+
+for u , v in edges:
+    lst[u].append(v)
+
+
+
+
+#dictionary 
+
+my_dict = {}
+
+for i in range(1 , n + 1):
+    my_dict[i] = []
+    
+for u , v in edges:
+    my_dict[u].append(v)
+    my_dict[v].append(u)
+
+print(my_dict)
