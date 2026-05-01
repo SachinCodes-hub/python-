@@ -11,4 +11,5 @@ while temp is not None:
     
     else:
         temp = temp.right
-    
+
+#return None # if nothing is found
