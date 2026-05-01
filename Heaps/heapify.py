@@ -101,4 +101,9 @@ def heapifyfup(self , arr , ind ):          # heapify up function
 
 
 
-print(arr[2]) # crazy scenes after applying the heapify algorithm the the value 9 will connected to it . 
+print(arr[2]) # crazy scenes after applying the heapify algorithm the the value 9 will be at 2 nd index to satisgfy the max heap 
+
+
+# remember the we can apply it in max heap , when we want to insert a index at its correct position keeping the binary tree rules alive then we have to use this heapify algorithm . 
+
+ 
