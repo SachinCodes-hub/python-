@@ -93,5 +93,5 @@ print(newnode)
 
 # time comlexity - o(log2(N))
 
-# space complexity - O(log2(N))
+# space complexity - O(1)
 
