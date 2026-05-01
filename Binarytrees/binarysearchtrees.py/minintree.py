@@ -44,8 +44,6 @@ def findmin(node):
     return root.val
     
 
-
-
 min = findmin(nine)
 
 print(min)
