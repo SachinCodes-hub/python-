@@ -1,6 +1,8 @@
 nums = [10 , 7 , 6, 4 , 5 , 4 , 5 , 6 , 2 ]
 
+# tc and sc = o(log2(n)) - height of the binary tree - because the max the stack can fill and max a time it consume when we have longest path i.e height of the binary tree . 
 
+# HEIGHT OF THE BIANRY TREE - TC - O(LOG2(N))
 
 arr = nums 
 ind = 5
