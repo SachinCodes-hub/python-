@@ -1,4 +1,4 @@
-def deletenode(self , root: optional [TreeNode] , key : int) -> Optional[TreeNode]:
+def deletenode(self , root: Optional [TreeNode] , key : int) -> Optional[TreeNode]:
     if root is None:
         return None
     if root.val == key:
