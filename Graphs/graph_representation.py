@@ -36,6 +36,6 @@ for i in range(1 , n + 1):
     
 for u , v in edges:
     my_dict[u].append(v)
-    my_dict[v].append(u)
+    my_dict[v].append(u) 
 
 print(my_dict)
