@@ -22,24 +22,29 @@ print(matrix) # output with the connections link value as 1
 
 lst = [[] for _ in range(n+1)]
 
-# print(lst) - # list approach is better . 
+# print(lst) - # list approach is better as it use less stack space than matrix -
+
+ 
 
 
 for u , v in edges:
     lst[u].append(v)
+    lst[v].append(u) # vice - versa 
+
+print(lst)
 
 
 
-
-#dictionary 
+#Dictionary - not preferable -coz sometimes dict -will take o(N) sometimes it does its operations in O(1)
 
 my_dict = {}
 
-for i in range(1 , n + 1):
-    my_dict[i] = []
+for i in range(1 , n + 1): # start form 1 
+    my_dict[i] = [] # empty dict
+    
     
 for u , v in edges:
-    my_dict[u].append(v)
-    my_dict[v].append(u) 
-
+    my_dict[u].append(v) # key - u , value - v 
+    my_dict[v].append(u) # vice versa - why this statement coz - when 1 is connected to 2 then common sense 2 is connected to 1 but code machine dosent know this unless you write it . 
+    
 print(my_dict)
