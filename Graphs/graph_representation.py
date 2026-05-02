@@ -10,7 +10,7 @@ print(matrix)
 
 #editing our edges into the 0 element matrix 
 for u,v in edges:
-    matrix[u][v] = 1
+    matrix[u][v] = 1 # why one only coz no weight is given so by default assume 1 is weight given . 
     matrix[v][u] = 1
     
 print(matrix) # output with the connections link value as 1 
@@ -23,8 +23,6 @@ print(matrix) # output with the connections link value as 1
 lst = [[] for _ in range(n+1)]
 
 # print(lst) - # list approach is better as it use less stack space than matrix -
-
- 
 
 
 for u , v in edges:
@@ -48,3 +46,4 @@ for u , v in edges:
     my_dict[v].append(u) # vice versa - why this statement coz - when 1 is connected to 2 then common sense 2 is connected to 1 but code machine dosent know this unless you write it . 
     
 print(my_dict)
+
