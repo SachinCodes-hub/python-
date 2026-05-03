@@ -33,4 +33,4 @@ adjancey_list = [
     
 ]
 
-print(bfs(n , adjancey_list , 1))
+print(bfs(n , adjancey_list , 1)) # output perfect bfs implementation . 
