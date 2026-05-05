@@ -22,3 +22,6 @@ if str == str[::-1]:
     print("string is palindrome")
 else:
     print("not a palindrome")
+    
+    
+    
