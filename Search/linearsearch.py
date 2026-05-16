@@ -7,3 +7,9 @@ for i in range(0,len(nums)):
     
 
 #TC - O(N) - SC _ O(1)
+n = len(nums )
+
+for i in range(0 , n):
+    if target == nums[i]:
+        print("GOt the target!!")
+        

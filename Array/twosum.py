@@ -13,7 +13,7 @@ for i in range(0 , n):
     
 
 
-#optimal solution
+#optimal solution - 
 
 hashmap = {}
 n = len(arr)
@@ -24,6 +24,6 @@ for i in range(0 , n):
         print(hashmap[remaining] ,i)
     
     hashmap[arr[i]] = i #here we are putting the indexes for each key in dict . because we have to give indexes as a a answer . 
-     
+    
 
     
